@@ -123,7 +123,7 @@ Postman is a powerful tool used to test APIs by making HTTP requests. Use Postma
   - Body: 
     ```json
     {
-      "id": 7,
+      "id": 9,
       "name": "Mango"
     }
     ```
@@ -136,7 +136,7 @@ Postman is a powerful tool used to test APIs by making HTTP requests. Use Postma
   - Body: 
     ```json
     {
-      "id": 7,
+      "id": 9,
       "name": "Mango 🥭"
     }
     ```
@@ -144,7 +144,7 @@ Postman is a powerful tool used to test APIs by making HTTP requests. Use Postma
 #### Deleting a Fruit
 
 - **DELETE Request (Delete)**
-  - URL: `http://localhost:3000/data/7`
+  - URL: `http://localhost:3000/data/9`
   - Method: DELETE
 
 ```markdown
