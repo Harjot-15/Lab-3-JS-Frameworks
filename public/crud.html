@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations - Sikh Beperwah</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sikh Beperwah</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark" href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex flex-column min-vh-100">
+        <main class="flex-fill">
+            <div class="container mt-5">
+                <h1 class="text-center">CRUD Operations</h1>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2>Add New Item</h2>
+                                <form id="create-form">
+                                    <div class="form-group">
+                                        <input type="text" id="create-id" class="form-control" placeholder="Enter ID" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="create-name" class="form-control" placeholder="Enter Name" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Add Item</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2>Update Item</h2>
+                                <form id="update-form">
+                                    <div class="form-group">
+                                        <input type="text" id="update-id" class="form-control" placeholder="Enter ID" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="update-name" class="form-control" placeholder="Enter Name" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Update Item</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2>Delete Item</h2>
+                                <form id="delete-form">
+                                    <div class="form-group">
+                                        <input type="text" id="delete-id" class="form-control" placeholder="Enter ID" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-block">Delete Item</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2>Current Data</h2>
+                        <button id="refresh-data" class="btn btn-secondary mb-3">Refresh Data</button>
+                        <pre id="data-display" class="bg-light p-3 border rounded"></pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer bg-dark text-white text-center py-3 mt-auto">
+            <p>&copy; 2024 Sikh Beperwah</p>
+        </footer>
+    </div>
+    <script src="js/crud.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
