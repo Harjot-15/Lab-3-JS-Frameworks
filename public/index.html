@@ -10,10 +10,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Sikh Beperwah</a>
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fruits">View JSON Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/crud">Data Operations</a>
                 </li>
             </ul>
         </div>
@@ -22,24 +31,31 @@
         <main class="flex-fill">
             <div class="container mt-5">
                 <h1 class="text-center">Welcome to Sikh Beperwah Project</h1>
-                <div class="card mt-3">
+                <div class="card mt-3 shadow-sm">
                     <div class="card-body text-center">
-                        <h2>Group Name: Sikh Beperwah</h2>
-                        <p>Members: Harjot, Harminder, Rupinder</p>
+                        <h2 class="card-title">Group Name: <span class="text-primary">Sikh Beperwah</span></h2>
+                        <p class="card-text">
+                            <strong>Members:</strong>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">Harjot</li>
+                                <li class="list-inline-item">Harminder</li>
+                                <li class="list-inline-item">Rupinder</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-4">
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body text-center">
-                                <h3><a href="/fruits" class="btn btn-primary">View JSON Data</a></h3>
+                                <h3><a href="/fruits" class="btn btn-primary btn-lg">View JSON Data</a></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body text-center">
-                                <h3><a href="/crud" class="btn btn-primary">Data Operations</a></h3>
+                                <h3><a href="/crud" class="btn btn-primary btn-lg">Data Operations</a></h3>
                             </div>
                         </div>
                     </div>
