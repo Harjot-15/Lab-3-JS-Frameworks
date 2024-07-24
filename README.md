@@ -124,20 +124,20 @@ Postman is a powerful tool used to test APIs by making HTTP requests. Use Postma
     ```json
     {
       "id": 9,
-      "name": "Mango"
+      "name": "Pineapples"
     }
     ```
 
 #### Updating a Fruit to Include an Emoji
 
 - **PUT Request (Update)**
-  - URL: `http://localhost:3000/data/7`
+  - URL: `http://localhost:3000/data/9`
   - Method: PUT
   - Body: 
     ```json
     {
       "id": 9,
-      "name": "Mango 🥭"
+      "name": "Pineapple 🍍"
     }
     ```
 
