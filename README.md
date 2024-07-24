@@ -124,7 +124,7 @@ Postman is a powerful tool used to test APIs by making HTTP requests. Use Postma
     ```json
     {
       "id": 9,
-      "name": "Pineapples"
+      "name": "Pineapple"
     }
     ```
 
